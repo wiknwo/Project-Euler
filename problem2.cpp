@@ -22,6 +22,7 @@ int main(){
 	int next = 2;
 	int sum = 0;
 	
+	// Sum even Fibonacci numbers
 	while(current <= 4000000){
 		if(current % 2 == 0) sum += current;
 		next = current + previous;
