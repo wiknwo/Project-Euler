@@ -1,2 +1,2 @@
 # Project-Euler #
-Repository containing solutions to project Euler problems.
+Repository containing solutions to Project Euler problems.
