@@ -64,7 +64,7 @@ def main():
 
         # Remove number of values that do not recur
         recurring_decimal_length -= quotient[current_value]
-
+        
         if recurring_decimal_length > longest_recurring_cycle_length:
             longest_recurring_cycle_length = recurring_decimal_length
             longest_recurring_cycle_denominator = d

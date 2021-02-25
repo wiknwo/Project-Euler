@@ -1,6 +1,6 @@
 '''Problem 14: Longest Collatz Sequence
 
-    William Ikenna-Nwosu
+    William Ikenna-Nwosu (wiknwo)
 
     The following iterative sequence is defined for the set 
     of positive integers:
@@ -31,6 +31,7 @@ def main():
     count = 0
     longest_chain = 0
     starting_number_longest_chain = -1
+
     while starting_number < 1000000:
         if n == 1 and count != 0:
             if len(sequence) > longest_chain:
@@ -47,8 +48,8 @@ def main():
             n = n / 2
             sequence.append(n)
         count += 1
+        
     print(starting_number_longest_chain)
     print(longest_chain)
 if __name__ == '__main__':
     main()
-

@@ -80,8 +80,8 @@ int main(){
             }
 
             // Diagonal left
-            if(i - 1 >= 0 && j - 1 >= 0 && i - 2 >= 0 && j - 2 >= 0 && i - 3 >= 0 && j - 3 >= 0){
-                product = grid[i][j] * grid[i - 1][j - 1] * grid[i - 2][j - 2] * grid[i - 3][j - 3];
+            if(i + 1 < 20 && j - 1 >= 0 && i + 2 < 20 && j - 2 >= 0 && i + 3 < 20 && j - 3 >= 0){
+                product = grid[i][j] * grid[i + 1][j - 1] * grid[i + 2][j - 2] * grid[i + 3][j - 3];
                 if(product > greatest_product_four_adjacent_numbers_same_direction){
                     greatest_product_four_adjacent_numbers_same_direction = product;
                 }

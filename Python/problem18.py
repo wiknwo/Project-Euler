@@ -51,6 +51,7 @@ def main():
     #     index = numbers[i + 1].index(max(numbers[i + 1][index], numbers[i + 1][index + 1]))
     #     max_path_sum.append(numbers[i + 1][index])
 
+    # Dynamic Programming - Bottom Up Approach
     max_path_sum.append(max(numbers[len(numbers) - 1]))
     for i in reversed(range(len(numbers) - 1)):
         for j in range(len(numbers[i])):
